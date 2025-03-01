@@ -69,4 +69,3 @@ class Task
         $this->updated_at = $updated_at;
     }
 }
-

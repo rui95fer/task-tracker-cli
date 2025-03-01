@@ -65,8 +65,8 @@ class TaskService
         $tasks = $this->loadTasks();
 
         $newId = empty($tasks) ? 1 : max(array_map(function ($task) {
-                return $task->getId();
-            }, $tasks)) + 1;
+            return $task->getId();
+        }, $tasks)) + 1;
 
         $tasks[] = new Task($newId, $description, 'todo', date('d-m-Y H:i:s'), date('d-m-Y H:i:s'));
 
